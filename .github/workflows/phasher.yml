@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y <package1> <package2>
+          sudo apt-get install -y golang git gcc nodejs ffmpeg
 
       - name: Run Makefile
-        run: make
+        run: make phasher
